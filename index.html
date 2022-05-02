@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">&nbsp;
+    <div class="logo-details">
+        <img src="img/Logoitp.png" alt="mdo" width="75" height="60">&nbsp;
+      <span class="logo_name"> ITPachuca</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Catalogos y Capturas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Catalogos</a></li>
+
+          <li><a href="#RegistrarTrabajadores">Trabajadores</a></li>
+          <li><a href="#">Horarios</a></li>
+          <li><a href="#">Departamentos</a></li>
+          <li><a href="#">Tipos de Retardos</a></li>
+          <li><a href="#">Dias Festivos</a></li>
+          <li><a href="#">Causas de Justificación</a></li>
+          <li><a href="#">Causas de Ausencia</a></li>
+          <li><a href="#">Tipos de Retardos</a></li>
+        </ul>
+      </li>&nbsp;
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-user-check' ></i>
+            <span class="link_name">Asistencia</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Asistencia</a></li>
+          <li><a href="#"> Justificar Incidencias</a></li>
+          <li><a href="#"> Carga Checadas</a></li>
+          <li><a href="#"> Entradas, Salidas e Incidencias</a></li>
+          <li><a href="#"> Borra Faltas</a></li>
+        </ul>
+      </li>&nbsp;
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-history' ></i>
+            <span class="link_name">Utilerias</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Utilerias</a></li>
+          <li><a href="#"> Mantenimiento BD</a></li>
+          <li><a href="#"> Registrar Escuela</a></li>
+         
+        </ul>
+      </li>&nbsp;
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-report' ></i>
+            <span class="link_name">Reportes y Consultas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Reportes y Consultas</a></li>
+          <li><a href="#">Asistencias en fila</a></li>
+          <li><a href="#">Asistencias Individual</a></li>
+          <li><a href="#">Asistencias Resumen</a></li>
+          <li><a href="#">Notas Malas</a></li>
+          <li><a href="#">Notas Buenas</a></li>
+          <li><a href="#">Susp. Capturadas</a></li>
+          <li><a href="#">Suspenciones Sistema</a></li>
+          <li><a href="#">Personal Ausente</a></li>
+          <li><a href="#">Dias Económicos</a></li>
+          <li><a href="#">Reporte faltas para SEP</a></li>
+
+        </ul>
+      </li>&nbsp;
+      <li>
+        <a href="#">
+            <i class='bx bx-git-pull-request'></i>
+          <span class="link_name">Acerca de</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Acerca de</a></li>
+        </ul>
+      </li>&nbsp;
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Salir</div>
+        <div class="job"></div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>&nbsp;
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Instituto Tecnologico de Pachuca</span>
+    </div>
+  </section>
+
+  
+  <section class="home-section" id="RegistrarTrabajadores">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Instituto Tecnologico de Pachuca</span>
+    </div>
+   
+<section class="form-register">
+    <div class="container">
+        <div class="title">Captura de Trabajadores</div>
+        <div class="content">
+          <form action="./backend/connect.php" method="post">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">No. del Trabajador</span>
+                <input type="text" id="Notrab" name="Notrab" placeholder="Digite  su id" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Nombre</span>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Digite su Nombre" required>
+              </div>
+              <div class="input-box">
+                <span class="details">RFC</span>
+                <input type="text" id="RFC" name="RFC" placeholder="Digitw su RFC" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Plaza</span>
+                <input type="text" id="Plaza" name="Plaza" placeholder="Digite su No. Plaza" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Curp</span>
+                <input type="text" id="Curp" name="Curp" placeholder="Digite su curp" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Centro</span>
+                <input type="text" id="Centro" name="Centro" placeholder="Digite su Centro" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Area</span>
+                <input type="text" id="Area" name="Area" placeholder="Digite su Area" required>
+              </div>
+              <div class="input-box">
+                <span class="details">No.depto</span>
+                <input type="text" id="No_depto" name="No_depto" placeholder="Digite su No. depto" required>
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="Cargo" value="A"id="dot-1">
+              <input type="radio" name="Cargo" value="D" id="dot-2">
+              <span class="gender-title">Cargo</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Administrador</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Docente</span>
+              </label>
+              
+              </div>
+            </div>
+            <div class="button">
+              <input  type="submit" value="Registrar">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+</section>
+    
+  </section>
+
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+
